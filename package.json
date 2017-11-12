@@ -1,0 +1,26 @@
+{
+  "name": "pi-node-thermostat",
+  "version": "0.0.1",
+  "description": "A raspberry pi node thermostat",
+  "main": "thermostat.js",
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aphotix/pi-node-thermostat.git"
+  },
+  "author": "aphotix",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aphotix/pi-node-thermostat/issues"
+  },
+  "homepage": "https://github.com/aphotix/pi-node-thermostat#readme",
+  "dependencies": {
+    "adafruit-i2c-lcd": "^1.0.2",
+    "hapi": "^16.6.2",
+    "i2c-bus": "^1.2.4",
+    "raspi-node-sht31": "^0.1.0",
+    "rpio": "^0.9.19"
+  }
+}
