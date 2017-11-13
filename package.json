@@ -1,8 +1,8 @@
 {
   "name": "pi-node-thermostat",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A raspberry pi node thermostat",
-  "main": "thermostat.js",
+  "main": "index.js",
   "engines": {
     "node": ">= 6.0.0"
   },

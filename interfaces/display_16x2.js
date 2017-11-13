@@ -1,3 +1,5 @@
+// Only powering one display, didn't bother to make this a class.
+
 const LCDPLATE = require('adafruit-i2c-lcd').plate;
 const lcd = new LCDPLATE(1, 0x20, 10000); // Polling can't be disabled
 
