@@ -10,7 +10,7 @@ function CtoF(temp){ return Math.round((temp * 1.8 + 32) * 10) / 10; }
 function get(fahrenheit){
   return sht31.readSensorData().then((data) => {
     const temperature = fahrenheit ? CtoF(data.temperature) : data.temperature;
-    const humidity = data.humidity;
+    const humidity = Math.round(data.humidity);
     return { temperature, humidity };
   });
 }
