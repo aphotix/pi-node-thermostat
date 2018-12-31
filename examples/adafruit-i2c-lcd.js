@@ -1,14 +1,14 @@
 const LCDPLATE = require('adafruit-i2c-lcd').plate;
-const lcd = new LCDPLATE(1, 0x20);
+const lcd = new LCDPLATE(1, 0x20, 50);
 
 lcd.backlight(lcd.colors.WHITE)
-lcd.message('Hello World!');
+// lcd.message('Hello World!');
 
 var lastButton;
 
-lcd.on('button_change', function(button){
-	lcd.clear();
-	lcd.message('Button Changed:\n' + lcd.buttonName(button));
+lcd.on('button_down', function(button){
+	// lcd.clear();
+	lcd.message(`Button Changed\n${(lcd.buttonName(button) || ' ').padEnd(16, ' ')}`);
 	console.log(button);
 	if(lastButton == 16 && button == 16){
 		// Exit

@@ -1,5 +1,5 @@
 const SETPIN = require('../interfaces/setpin.js');
-const heater = new SETPIN(11);
+const heater = new SETPIN(7);
 // const aircon = new SETPIN(12); // Its too cold here to worry about Dynamic AC!
 
 var interval = setInterval(() => {
